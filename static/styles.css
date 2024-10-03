@@ -1,0 +1,49 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+h1, h2 {
+    font-size: 2.5em;
+    font-weight: bold; 
+}
+
+p {
+    font-size: 1.2em;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 1.2em;
+}
+
+button, .button {
+    background-color: rgb(149, 149, 239);
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 1.2em;
+}
+
+button:hover, .button:hover {
+    background-color: #b19cd9;
+}
+
+.container {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.list-item {
+    text-align: left;
+    margin: 10px 0;
+}

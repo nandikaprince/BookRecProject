@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SentimentReads Recommendations</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>SentimentReads</h1>
+        <h2>Here are some books recommended for you based on "{{ fav_book }}":</h2>
+        {% if not_found %}
+            <p>Sorry! "{{ fav_book }}" is not currently in our dataset.</p>
+        {% else %}
+            <ul>
+                {% for book in recommendations %}
+                    <li class="list-item">{{ loop.index }}. {{ book.title }} by {{ book.authors }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+        <a href="{{ url_for('home') }}" class="button">Home</a>
+    </div>
+</body>
+</html>
+

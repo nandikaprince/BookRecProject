@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SentimentReads</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>SentimentReads</h1>
+        <p>What kind of reads are you looking for today?</p>
+        <p>Enter the title of a book you like:</p>
+        <form method="POST">
+            <input type="text" name="book_title" required>
+            <p>Are you looking for a feel-good or emotional book today?</p>
+            <input type="text" name="sentiment_filter" required>
+            <button type="submit">Next</button>
+        </form>
+    </div>
+</body>
+</html>
+
+
+
